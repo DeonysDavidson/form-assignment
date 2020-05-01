@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM ASIGN</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col-5">
+      <form method="POST">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+              <label for="age">Age:</label><br>
+              <input type="number" id="age" name="age"><br>
+            </div>
+            <div class="col">
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+              <label for="phone">Phone:</label><br>
+              <input type="number" id="phone" name="phone"><br>
+           
+            </div>
+           </div>
+         </div>
+         <div class="container"> 
+          <div class="row">
+            <div class="col">
+              <label for="state">State:</label><br>
+                <select id="state">
+                <option value="andhra">Andhra Pradesh</option>
+                <option value="kerala">Kerala</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="tamil Nadu">Tamil Nadu</option> 
+              </select>
+            </div>
+            <div class="col">
+                <label for="city">City:</label><br>
+                <select id="city">
+                <option value="chennai">chennai</option>
+                <option value="bangalore">bangalore</option>
+                <option value="hydrebad">hydrebad</option>
+                <option value="mumbai">mumbai</option> 
+              </select>
+            </div>
+            <div class="col">
+              <label for="country">Country:</label><br>
+              <select id="country">
+                <option value="india">India</option>
+                <option value="sri lanka">Sri Lanka</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="bhutan">Bhutan</option> 
+              </select>
+            </div>
+          </div>
+         </div><br>
+         <div>
+          <label for="fname">Gender:</label><br>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label>
+           
+         </div>
+         <div>
+           <label for="fname">Favorite Color:</label><br>
+           <input type="checkbox" id="red" name="color" value="red">
+           <label for="color1">Red</label>
+           <input type="checkbox" id="orange" name="color" value="orange">
+           <label for="color2"> Orange</label>
+         </div>
+         <div>
+           <label for="message">Messgae:</label><br>
+            <textarea id="message" rows="4" cols="50">
+            
+            </textarea>
+         </div>
+         <div>
+           <input type="button" id="add" value="Add" onclick="Javascript:addRow()">
+
+         </div>
+      </form>
+    </div>
+    <div class="col">
+      <table id="myTableData" border="1" cellpadding="2">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Age</th>
+    <th>Phone</th>
+    <th>State</th>
+    <th>City</th> 
+    <th>Country</th>
+    <th>Gender</th>
+    <th>Color</th>
+    <th>Message</th>
+  </tr>
+    </div>
+  </div>
+</body>
+</html>
